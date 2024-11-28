@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  button{
+    cursor: pointer;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+   
+  }
+  
+  header {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    
+  }
+  .right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .header .logo {
+    font-size: 24px;
+  }
+  
+  .search-bar {
+    margin: 10px 0;
+  }
+  
+  .search-bar input {
+    width: auto;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  
+  .nav-menu.hidden {
+    display: none;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+  }
+  
+  .page {
+    padding: 20px;
+  }
+  
+  .page .hidden {
+    display: none;
+  }
+  
+  form div{
+    display: flex;
+    flex-direction:column;
+    margin:10px auto 10px auto;
+
+  }
+  form input{
+    padding:10px;
+    margin-top: 3px;
+  }
+  form textarea{
+    margin-top: 3px;
+  }
+  form button{
+    padding:5px;
+
+  }
+  /* .table-container {
+    width: 100%;
+    overflow-x: auto; 
+  } */
+  .table-container {
+    width: 100%;
+    overflow-x: auto; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    
+  }
+  
+  
+  .table-container::-webkit-scrollbar {
+    height: 8px; 
+  }
+  
+  .table-container::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px; 
+  }
+  
+  .table-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  .table-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger-menu {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .nav-menu.show {
+      display: flex;
+    }
+    .right-side{
+        display: flex;
+        flex-direction: row;
+
+
+    }
+    
+      
+  }
+  
